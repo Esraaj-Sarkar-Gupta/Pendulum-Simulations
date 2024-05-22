@@ -1,3 +1,4 @@
+# pendulum second order differential equation
 import numpy as np
 from scipy.integrate import odeint
 import time as tm
