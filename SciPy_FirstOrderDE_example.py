@@ -1,3 +1,5 @@
+# Example of how to solve first order differential equations using odeint from scipy.
+
 import numpy as np
 from scipy.integrate import odeint
 
