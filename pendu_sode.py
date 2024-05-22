@@ -1,4 +1,4 @@
-# pendulum second order differential equation
+# Solving the second order differential equation of a pendulum - plotting solution and phase space. 
 import numpy as np
 from scipy.integrate import odeint
 import time as tm
@@ -32,7 +32,7 @@ theta_dot = sol[:, 1]
 # Plot the solution
 import matplotlib.pyplot as plt
 
-# plot 1:
+# plot 1 - solution for theta:
 plt.plot(t, theta , color = 'blue')
 plt.xlabel("Time (t)")
 plt.ylabel("Position (θ)")  # Use theta for position
@@ -40,7 +40,7 @@ plt.title(f"Solution of d²θ/dt² + {Omega}sin(θ) = 0 with θ(0) = {theta0} an
 plt.grid()
 plt.show()
 
-# plot 2:
+# plot 2 - phase space graph:
 plt.plot(theta , theta_dot , color = 'red')
 plt.xlabel("Position (θ)")
 plt.ylabel("Angular velocity (dθ/dt)")
