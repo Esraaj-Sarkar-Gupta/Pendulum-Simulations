@@ -33,9 +33,8 @@ theta_dot = sol[:, 1]
 import matplotlib.pyplot as plt
 
 # plot 3 - polar plot of possible locations:
-r = []
-for _ in range(3000):
-    r.append(10)
+
+r = [10 for _ in range(3000)]
     
 ax = plt.subplot(111, projection='polar')
 ax.set_theta_offset(np.pi*1.5)
