@@ -1,8 +1,9 @@
+# Comparing the phase spaces of the solutions of the linear and non-linear differnetial euqations for small θ such that sin(θ) ≈ θ for the equation d²θ/dt² + ω²sin(θ) = 0.
 import numpy as np
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 
-print("Comparing the solutions of linear and non-linear differnetial euqations for small θ such that sin(θ) ≈ θ for the equation d²θ/dt² + ω²sin(θ) = 0.")
+print("Comparing the phase spaces of the solutions of the linear and non-linear differnetial euqations for small θ such that sin(θ) ≈ θ for the equation d²θ/dt² + ω²sin(θ) = 0.")
 
 def system_simple(v, t, Omega):  # ω^2 = Ω
   theta, theta_dot = v # Unpack state vector
