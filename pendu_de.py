@@ -35,7 +35,7 @@ import matplotlib.pyplot as plt
 plt.plot(t, theta , color = 'blue')
 plt.xlabel("Time (t)")
 plt.ylabel("Position (θ)")  # Use theta for position
-plt.title(f"Solution of d²θ/dt² + {Omega}θ = 0 with θ(0) = {theta0} and θ'(0) = {theta_dot0}")
+plt.title(f"Solution of d²θ/dt² + {Omega}sin(θ) = 0 with θ(0) = {theta0} and θ'(0) = {theta_dot0}")
 plt.grid()
 plt.show()
 
@@ -43,7 +43,7 @@ plt.show()
 plt.plot(theta , theta_dot , color = 'red')
 plt.xlabel("Position (θ)")
 plt.ylabel("Angular velocity (dθ/dt)")
-plt.title(f"Solution of d²θ/dt² + {Omega}θ = 0 with θ(0) = {theta0} and θ'(0) = {theta_dot0}")
+plt.title(f"Solution of d²θ/dt² + {Omega}sin(θ) = 0 with θ(0) = {theta0} and θ'(0) = {theta_dot0}")
 plt.grid()
 plt.show()
 
