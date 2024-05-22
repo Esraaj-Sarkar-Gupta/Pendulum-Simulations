@@ -1,3 +1,4 @@
+# Solving the secondary differential equation of a pendulum - plotting polar coordinates of possible locations of pendulum.
 import numpy as np
 from scipy.integrate import odeint
 import time as tm
@@ -31,7 +32,7 @@ theta_dot = sol[:, 1]
 # Plot the solution
 import matplotlib.pyplot as plt
 
-# plot 3:
+# plot 3 - polar plot of possible locations:
 r = []
 for _ in range(3000):
     r.append(10)
