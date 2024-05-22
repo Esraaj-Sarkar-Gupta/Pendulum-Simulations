@@ -34,7 +34,7 @@ import matplotlib.pyplot as plt
 
 # plot 3 - polar plot of possible locations:
 
-r = [10 for _ in range(3000)]
+r = [10 for _ in range(3000)] # storing the value of radius (10m) 3000 times to match with each element in the list theta
     
 ax = plt.subplot(111, projection='polar')
 ax.set_theta_offset(np.pi*1.5)
