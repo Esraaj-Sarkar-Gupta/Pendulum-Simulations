@@ -49,9 +49,9 @@ yhw = [0 , 0]
 radius = 1
 
 # graphing results:
-def graph(n , m): # plotting a graph for every frame n 
-    a = l*np.cos(n - np.pi/2) # x coordinate 
-    b = l*np.sin(n - np.pi/2) # y coordinate 
+def graph(m): # plotting a graph for every frame n  - I know I could've done this with a single local variable but this breaks when I do that and I have no idea why.It isn't broken, so I'm not fixing it. 
+    a = l*np.cos(theta[m] - np.pi/2) # x coordinate 
+    b = l*np.sin(theta[m] - np.pi/2) # y coordinate 
     
     PE = mass*g*(l+b) # potential energy of system
     KE = 0.5*mass*(theta_dot[m]*l)**2  # kinetic enegry of system 
