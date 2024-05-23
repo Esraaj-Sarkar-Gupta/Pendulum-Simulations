@@ -90,9 +90,3 @@ delta_t2 = et_2 - st_2
 
 print(f"> All {sim_time*FPS} graphs (frames) have been generated.")
 print(f"> Real time taken to generate {sim_time} seconds of simulated time is {delta_t2:.4f} seconds. Ratio = {delta_t2 / sim_time}, the real time taken to generate 1 second of simulated time.")
-    
-
-    
-    
-    
-
