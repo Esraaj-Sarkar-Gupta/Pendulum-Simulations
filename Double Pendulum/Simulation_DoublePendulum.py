@@ -93,6 +93,10 @@ Y1 = []
 X2 = []
 Y2 = []
 
+dir = input("Enter the name of the direction to save frames to: ")
+os.mkdir(dir)
+print("> Directory created")
+
 print("- Iterating through angle values...")
 for i in range(len(t)):
     X1.append(l1 * np.sin(theta1[i]))
@@ -140,7 +144,7 @@ for I in range(len(t)):
     plt.xlim(-10 , 10)
     plt.ylim(-15 , 5)
     
-    plt.savefig(f"Frames_DoublePendulum/Frame_{I}")
+    plt.savefig(f"{dir}/Frame_{I}")
     plt.close()
 e_time_2 = tm.time()
 print(f"> All {P} frames printed and saved to folder in {e_time_2 - s_time_2 :.3f} seconds.")
