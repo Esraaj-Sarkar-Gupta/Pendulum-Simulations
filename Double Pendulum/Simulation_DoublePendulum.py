@@ -94,8 +94,11 @@ X2 = []
 Y2 = []
 
 dir = input("Enter the name of the direction to save frames to: ")
-os.mkdir(dir)
-print("> Directory created")
+try:
+    os.mkdir(dir)
+    print("> Directory created")
+except:
+    print("> Directory already exsists")
 
 print("- Iterating through angle values...")
 for i in range(len(t)):
