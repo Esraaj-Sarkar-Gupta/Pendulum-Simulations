@@ -69,7 +69,7 @@ plt.ylabel('Angle (radians)')
 plt.title('System Angles')
 plt.legend()
 plt.grid(True)
-
+plt.show()
 print("> Angles plotted against time")
 
 plt.figure()
@@ -79,6 +79,7 @@ plt.title('Angular Velocities Plotted Against Their Angles')
 plt.xlabel('Angle (radians)')
 plt.ylabel('Angular Velocities')
 plt.legend()
+plt.show()
 print('> Angular velocities plotted against angles')
 
 tm.sleep(2) # time to let program display plots
