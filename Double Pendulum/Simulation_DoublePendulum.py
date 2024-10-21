@@ -31,9 +31,9 @@ def sys(state,t,m1,m2,l1,l2,g): # Defining the system mathematically (I messed t
 print("- System function defined")
 
 # Initial states:
-theta1_0 = np.pi*1.5
+theta1_0 = 0
 theta1_dot_0 = 0
-theta2_0 = 0
+theta2_0 = np.pi * 0.5
 theta2_dot_0 = 0
 
 state0 = np.array([theta1_0, theta1_dot_0, theta2_0, theta2_dot_0]) # Defining initial state vector
@@ -93,9 +93,9 @@ Y1 = []
 X2 = []
 Y2 = []
 
-dir = input("Enter the name of the direction to save frames to: ")
+dirc = str(input("Enter the name of the direction to save frames to: "))
 try:
-    os.mkdir(dir)
+    os.mkdir(dirc)
     print("> Directory created")
 except:
     print("> Directory already exsists")
@@ -147,7 +147,7 @@ for I in range(len(t)):
     plt.xlim(-10 , 10)
     plt.ylim(-15 , 5)
     
-    plt.savefig(f"{dir}/Frame_{I}")
+    plt.savefig(f"{dirc}/Frame_{I}")
     plt.close()
 e_time_2 = tm.time()
 print(f"> All {P} frames printed and saved to folder in {e_time_2 - s_time_2 :.3f} seconds.")
