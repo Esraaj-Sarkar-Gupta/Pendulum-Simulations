@@ -62,8 +62,8 @@ theta1 = sol[: , 0] # pulling solutions from
 theta2 = sol[: , 1]
 
 plt.figure()
-plt.plot(theta1 , t , color = 'lime' , label = 'θ₁')
-plt.plot(theta2 , t , color = 'red' , label = 'θ₂')
+plt.plot(t, theta1 , color = 'lime' , label = 'θ₁')
+plt.plot(t, theta2 , color = 'red' , label = 'θ₂')
 plt.xlabel('Time (s)')
 plt.ylabel('Angle (radians)')
 plt.title('System Angles')
