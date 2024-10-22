@@ -36,7 +36,7 @@ theta1_dot_0 = 0
 theta2_0 = np.pi * 0.5
 theta2_dot_0 = 0
 
-state0 = np.array([theta1_0, theta1_dot_0, theta2_0, theta2_dot_0]) # Defining initial state vector
+state0 = np.array([theta1_0, theta2_0, theta1_dot_0, theta2_dot_0]) # Defining initial state vector
 print("> Initial states defined")
 
 # System praramters:
